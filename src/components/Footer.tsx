@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             <CompanyInfo>
               <p>{companyName}</p>
               <p>{companyAddress}</p>
-              <p>Established March 2023</p>
+              <p>Established {process.env.REACT_APP_COMPANY_BIRTH || 'March 2025'}</p>
             </CompanyInfo>
           </FooterSection>
 
